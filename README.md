@@ -1,3 +1,4 @@
+# Kto prochital, tot lox
 # Папки не переименовывать, код в /src, остальное не трогать
 # Vue 3 + TypeScript + Vite
 
