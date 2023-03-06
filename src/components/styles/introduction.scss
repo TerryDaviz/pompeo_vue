@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital@1&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap');
+ 
+.introduction{
+    background-image: url(https://assets.website-files.com/5ba96977bf120e1b45986c06/5bc26c68ca643a35ff2e403f_scott-webb-268893-unsplash.jpg);
+    width: auto;
+    height: 800px;
+    .introduction__pot-image{
+        background-image: url('https://assets.website-files.com/5ba96977bf120e1b45986c06/5e602d43ad635f0fe2d06a05_Untitled-2d2%20(2).png');
+        background-repeat: no-repeat;
+        background-size:contain;
+        width:784px; 
+        height: 445px;
+        position: absolute;
+        right:5%;
+        top: 15%;
+    }
+    .content__button{
+        margin: 500px 0 0 100px;
+        width:201px;
+        height: 62px;
+        color: #fff;
+        background-color: #AC1313;
+        font-size:12px;
+        font-family: Poppins;
+    }
+}
+
