@@ -5,6 +5,7 @@ import PotteryCollectionItem from './PotteryCollectionItem.vue'
 import '../styles/collection.scss'
 import '../styles/section-names.scss'
 import '../styles/content__button.scss'
+import '../styles/section.scss'
 const collectionButtonText = ref("view all products")
 type Item = {
     imgSrc: string,
@@ -28,7 +29,7 @@ const itemsInfo: Ref<Item[]> = ref([
 </script>
 
 <template>
-    <div class="collection">
+    <div class="collection section">
         <p class="section-name1"> Product Collections </p>
         <div class="collection__content">
             <div class="section-heading">
