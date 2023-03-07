@@ -3,9 +3,42 @@
  
 .introduction{
     background-image: url(https://assets.website-files.com/5ba96977bf120e1b45986c06/5bc26c68ca643a35ff2e403f_scott-webb-268893-unsplash.jpg);
+    background-size: 100% 430px;
+    background-repeat: no-repeat;
     width: auto;
     height: 800px;
-    .introduction__pot-image{
+    .introduction__textContent_wrapper{
+        padding-top: 25px;
+        margin-left: 100px;
+        box-sizing: border-box;
+        .introduction__pompeoPottery{
+            font-family: Poppins, sans-serif;
+            color: #D77474;
+            font-size:14px;
+            font-weight:700;
+            line-height: 24px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform:uppercase;
+        }
+        .introduction__textContent_bold{
+            font-family: Poppins, sans-serif;
+            margin-top:20px;
+            font-size: 48px;
+            line-height: 58px;
+            font-weight: 500;
+            .introduction__logoText{
+                display: inline-block;
+                font-family: 'Playfair Display', sans-serif;
+                position: relative;
+                color:#ac1313;
+                font-size: 68px;
+                line-height: 68px;
+                font-weight: 400;
+            }
+        }
+    }
+    .introduction__pot_image{
         background-image: url('https://assets.website-files.com/5ba96977bf120e1b45986c06/5e602d43ad635f0fe2d06a05_Untitled-2d2%20(2).png');
         background-repeat: no-repeat;
         background-size:contain;
