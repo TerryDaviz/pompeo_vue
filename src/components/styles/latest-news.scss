@@ -1,0 +1,93 @@
+@import 'fonts.scss';
+
+%lato-font{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.latest-news{
+    .section-name1{
+        left: auto;
+        right: 0;
+    }
+    .latest-news__content{
+        margin: 0 auto 28px auto;
+        text-align: center;
+
+        .latest-news__content__image{
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 40px;
+            background-color: #ebb96a;
+            background-image: url("https://assets.website-files.com/5ba96977bf120e1b45986c06/5baf7b8b7a16ad6c3bda1f4d_icons8-paper-plane-64.png");
+            background-position: 50% 50%;
+            background-size: 80px;
+            background-repeat: no-repeat;
+        }
+
+        .section-heading{
+            .section-name2{
+                font-weight: 400;
+            }
+            .section-name3{
+                margin: 8px 0 70px 0;
+                font-weight: 400;
+
+                span{
+                    font-family: 'Playfair Display', sans-serif;
+                    color: #AC1313;
+                    font-size: 68px;
+                    line-height: 68px;
+                }
+            }
+        }
+
+        .latest-news__content__form{
+            display: inline-block;
+
+            input[type="text"]{
+                display: inline-block;
+                margin-right: 4px;
+                border: 1px solid #EBEBEB;
+                box-sizing: border-box;
+                padding: 12px 40px;
+                width: 320px;
+                height: 45px;
+
+                @extend %lato-font;
+                color: #A1A1A1;
+            }
+
+            input[type="submit"]{
+                border: 0;
+                width: 175px;
+                height: 45px;
+                padding: 12px 35px;
+                background-color: #000;
+                cursor: pointer;
+
+                @extend %lato-font;
+                color: #fff;
+            }
+
+            label{
+                display: block;
+                margin-top: 40px;
+
+                input[type="checkbox"]{
+                    margin-right: 10px;
+                    background-color: #8534FF;
+                }
+
+                p{
+                    display: inline-block;
+                    @extend %lato-font;
+                    color: #A1A1A1;
+                }
+            }
+        }
+    }
+}
