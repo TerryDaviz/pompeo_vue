@@ -1,5 +1,5 @@
-# Kto prochital, tot lox
 # Папки не переименовывать, код в /src, остальное не трогать
+# Компонент, который называется так же, как и папка в которой он лежит - родительский. В нём нужно передавать пропсы и рендерить дочерние компоненты.
 # Vue 3 + TypeScript + Vite
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.

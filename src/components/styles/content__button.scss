@@ -1,0 +1,16 @@
+@import 'fonts.scss';
+
+.content__button{
+    padding: 20px 40px;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+    background-color: #AC1313;
+}
+.introduction .content__button_wrapper{
+    margin-top: -450px;
+}

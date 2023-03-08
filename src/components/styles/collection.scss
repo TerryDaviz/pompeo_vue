@@ -1,0 +1,63 @@
+@import 'fonts.scss';
+
+.collection{
+    background-color: #fff;
+
+    .collection__content{
+        margin: 0 auto;
+        padding: 0 24px;
+        width: 1200px;
+        text-align: center;
+
+        .section-name3{
+            margin-top: 17px;
+        }
+        .collection__content__items{
+            margin-top: 63px;
+            display: grid;
+            width: 1172px;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+
+            .collection__content__items__item{
+                width: -moz-fit-content;
+                width: fit-content;
+                border-bottom: 1px #DBDBDB solid;
+                text-align: left;
+                
+                img{
+                    object-fit: cover;
+                    width: 371px;
+                    height: 494px;
+                }
+                figcaption{
+                    margin-top: 5px;
+                    padding: 15px 0;
+                }
+                .collection__content__items__item_name{
+                    font-family: 'Libre Franklin';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+
+                    color: #6C6C6C;
+                }
+                .collection__content__items__item_price{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+
+                    color: #000;
+                }
+            }
+        }
+        
+        .content__button{
+            margin-top: 60px;
+        }
+    }
+}

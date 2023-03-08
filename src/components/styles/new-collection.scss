@@ -1,0 +1,41 @@
+@import 'fonts.scss';
+
+.new-collection{
+    background-image: url('https://assets.website-files.com/5ba96977bf120e1b45986c06/5bb966fd82df351adbb449c6_raul-cacho-oses-779595-unsplash-p-3200.jpeg');
+    
+    .new-collection__content{
+        position: relative;
+        padding-left: 144px;
+        box-sizing: border-box;
+        width: 50%;
+
+        .section-heading{
+            .section-name2{
+                text-align: left;
+                font-weight: 400;
+            }
+            .section-name3{
+                text-align: left;
+                margin-top: 10px;
+            }
+        }
+        .new-collection__content__text{
+            margin: 10px 0;
+            width: 80%;
+            font-family: 'Libre Franklin', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: #6C6C6C;
+
+            span{
+                color: #AC1313;
+                text-decoration: underline;
+            }
+        }
+        .content__button{
+            margin-top: 20px;
+        }
+    }
+}

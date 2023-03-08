@@ -1,0 +1,46 @@
+@import 'fonts.scss';
+
+.section-name1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 34px;
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: inline-block;
+    transform: rotate(-90deg) translate(0, -50%);
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+    color: #DBDBDB;
+}
+
+.section-name2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #D77474;
+}
+
+.section-name3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+
+    text-align: center;
+
+    color: #000000;
+}
