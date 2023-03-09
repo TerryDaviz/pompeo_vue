@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const props = defineProps({
     imgSrc: String,
     itemName: String,
