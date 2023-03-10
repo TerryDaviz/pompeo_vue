@@ -12,6 +12,7 @@ type Item = {
     itemName: string,
     price: number,
 }
+
 const itemsInfo: Ref<Item[]> = ref([
     <Item>{ imgSrc: 'https://assets.website-files.com/5bb39a4bdeee4e1e1f49f800/5bbbd7e1e364e913f38fed48_5bb3def89ab3aa39fda26d59_plate-1.png',
         itemName: 'Decor Plate', price: 65},
@@ -26,6 +27,7 @@ const itemsInfo: Ref<Item[]> = ref([
     <Item>{ imgSrc:'https://assets.website-files.com/5bb39a4bdeee4e1e1f49f800/5bbbd819e364e903ba8fee0c_5bb3c9f370f1175d66fc5d5a_oriento-663881-unsplash.png',
         itemName: 'Square Pottery', price: 75},
 ])
+
 </script>
 
 <template>
@@ -37,10 +39,10 @@ const itemsInfo: Ref<Item[]> = ref([
                 <p class="section-name3"> Pottery collection </p>
             </div>
             <div class="collection__content__items">
-                <PotteryCollectionItem v-for="(item) in itemsInfo"
+                <PotteryCollectionItem v-for="(item,key) in itemsInfo"
                     :img-src="item.imgSrc"
                     :item-name="item.itemName"
-                    :price="item.price"/>
+                    :price="item.price" :key = "key"/>
             </div>
             <ContentButton :props = "collectionButtonText"/>
         </div>
