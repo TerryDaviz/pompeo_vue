@@ -2,10 +2,11 @@
 
 .introduction{
     background-image: url(https://assets.website-files.com/5ba96977bf120e1b45986c06/5bc26c68ca643a35ff2e403f_scott-webb-268893-unsplash.jpg);
-    background-size: 100% 500px;
+    background-size: 100% 700px;
     background-repeat: no-repeat;
     width: auto;
-    height: 500px;
+    height: 700px;
+    padding-top: 180px;
     .introduction__textContent_wrapper{
         padding-top: 25px;
         margin-left: 100px;
@@ -42,10 +43,11 @@
         background-repeat: no-repeat;
         background-size:contain;
         width:784px; 
-        height: 445px;
+        height: 600px;
         position: absolute;
         right:5%;
-        top: 15%;
+        top: 45%;
+        margin-top: -130px;
     }
     .content__button{
         margin: 500px 0 0 100px;

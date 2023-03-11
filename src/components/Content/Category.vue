@@ -3,7 +3,7 @@ import '../styles/collection.scss'
 import '../styles/section-names.scss'
 import '../styles/content__button.scss'
 import '../styles/section.scss'
-import '../styles/categories.scss'
+import '../styles/vmp.scss'
 </script>
 
 <template>
