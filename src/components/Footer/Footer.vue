@@ -21,7 +21,7 @@ const rawItems: Ref<FooterRawItem[]> = ref([
 <template id="footer">
     <footer class="section">
         <div class="footer__content">
-            <a class="footer__content__name"> Pompeo </a>
+            <a class="footer__content__name" href="#"> Pompeo </a>
             <p class="footer__content__about"> I have always striven to fix beauty in wood, stone,
                 <br/>glass or pottery, that has been my creed.
             </p>
@@ -33,7 +33,7 @@ const rawItems: Ref<FooterRawItem[]> = ref([
             </div>
         </div>
         <div class="footer__subfooter">
-            <p>Template design by <a>Dorian Hoxha</a> - <a>Image License Info</a> Powered by <a>Webflow</a></p>
+            <p>Template design by <a href="#">Dorian Hoxha</a> - <a href="#">Image License Info</a> Powered by <a href="#">Webflow</a></p>
         </div>
     </footer>
 </template>
