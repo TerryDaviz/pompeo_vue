@@ -3,9 +3,12 @@
 const buttonText = defineProps({
     props: String
 })
+function showMessage(innerText){
+    console.log(innerText);        
+}
 </script>
 
 <template>
-    <button class="content__button"> {{buttonText.props.toUpperCase()}} </button> 
+    <button @click="showMessage(buttonText.props)" class="content__button"> {{buttonText.props.toUpperCase()}} </button> 
 </template>
 
