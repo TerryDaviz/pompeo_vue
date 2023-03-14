@@ -25,7 +25,8 @@ const itemsInfo: Ref<Item[]> = ref([
         itemName: 'Dark Bowl', price: 115},
     <Item>{ imgSrc:'https://assets.website-files.com/5bb39a4bdeee4e1e1f49f800/5bbbd819e364e903ba8fee0c_5bb3c9f370f1175d66fc5d5a_oriento-663881-unsplash.png',
         itemName: 'Square Pottery', price: 75},
-])
+]);
+let allProductsShown = ref(false);
 </script>
 
 <template>
@@ -37,12 +38,15 @@ const itemsInfo: Ref<Item[]> = ref([
                 <p class="section-name3"> Pottery collection </p>
             </div>
             <div class="collection__content__items">
-                <PotteryCollectionItem v-for="(item) in itemsInfo"
-                    :img-src="item.imgSrc"
-                    :item-name="item.itemName"
-                    :price="item.price"/>
+                <template v-for="(item, i) in itemsInfo">
+                    <PotteryCollectionItem v-if="i < 3 || allProductsShown"
+                        :img-src="item.imgSrc"
+                        :item-name="item.itemName"
+                        :price="item.price"/>
+                </template>
             </div>
-            <ContentButton :props = "collectionButtonText"/>
+            <ContentButton :props = "allProductsShown ? 'View less products' : 'View all products'" 
+                @click="allProductsShown = !allProductsShown"/>
         </div>
     </div>
 </template>

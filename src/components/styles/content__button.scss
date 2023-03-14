@@ -1,6 +1,7 @@
 @import 'fonts.scss';
 
 .content__button{
+    border: none;
     padding: 20px 40px;
     font-family: 'Poppins';
     font-size: 12px;
@@ -10,6 +11,13 @@
     text-align: center;
     color: #fff;
     background-color: #AC1313;
+    transition: all 0.4s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #000;
+        transform: translateY(-5px);
+    }
 }
 .introduction .content__button_wrapper{
     margin-top: -450px;
