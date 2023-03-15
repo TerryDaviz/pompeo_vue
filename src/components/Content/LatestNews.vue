@@ -17,7 +17,7 @@ import '../styles/section.scss'
                 <input type="text" maxlength="256" placeholder="Enter your email" required/>
                 <input type="submit" value="SUBSCRIBE"/>
                 <label>
-                    <input type="checkbox" name="cbx-sign-up">
+                    <input type="checkbox" name="cbx-sign-up" checked>
                     <p for="cbx-sign-up">Sign up for our newsletter</p>
                 </label>
             </form>

@@ -6,12 +6,9 @@ const menuContent = ref(['home', 'about', 'shop', 'contact'])
 
 </script>
 <template id="Header">
-<header>
-<div>
-
-    <Menu :props = "menuContent"/>
-
-</div>
-
-</header>
+    <header>
+        <div class="header_wrapper">
+            <Menu :props = "menuContent"/>
+        </div>
+    </header>
 </template>

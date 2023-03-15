@@ -16,7 +16,7 @@
             margin-top: 63px;
             display: grid;
             width: 1172px;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1fr;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;
 
@@ -25,11 +25,26 @@
                 width: fit-content;
                 border-bottom: 1px #DBDBDB solid;
                 text-align: left;
+
+                &:hover {
+                    border-bottom-color: #AC1313;
+                    img {
+                        transform: scale(1.1);
+                        filter: brightness(85%);
+                    }
+                }
                 
-                img{
-                    object-fit: cover;
+                .collection__content__items__item_img-block{
+                    display: inline-block;
                     width: 371px;
                     height: 494px;
+                    overflow: hidden;
+
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+                        transition: all 0.4s ease;
+                    }
                 }
                 figcaption{
                     margin-top: 5px;
