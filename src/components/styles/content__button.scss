@@ -1,6 +1,7 @@
 @import 'fonts.scss';
 
 .content__button{
+    display: inline-block;
     border: none;
     padding: 20px 40px;
     font-family: 'Poppins';
@@ -12,6 +13,7 @@
     color: #fff;
     background-color: #AC1313;
     transition: all 0.4s ease;
+    text-decoration: none;
     cursor: pointer;
 
     &:hover {

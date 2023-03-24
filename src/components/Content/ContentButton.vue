@@ -1,7 +1,8 @@
 <script setup lang="ts">
 
-const buttonText = defineProps({
-    props: String
+const props = defineProps({
+    buttonText: String,
+    href: String,
 })
 function showMessage(innerText){
     console.log(innerText);        
@@ -9,6 +10,6 @@ function showMessage(innerText){
 </script>
 
 <template>
-    <button @click="showMessage(buttonText.props)" class="content__button"> {{buttonText.props.toUpperCase()}} </button> 
+    <a :href="href" @click="showMessage(buttonText)" class="content__button"> {{buttonText.toUpperCase()}} </a> 
 </template>
 

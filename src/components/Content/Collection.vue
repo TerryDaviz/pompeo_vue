@@ -6,7 +6,6 @@ import '../styles/collection.scss'
 import '../styles/section-names.scss'
 import '../styles/content__button.scss'
 import '../styles/section.scss'
-const collectionButtonText = ref("view all products")
 
 type Item = {
     imgSrc: string,
@@ -33,6 +32,7 @@ let allProductsShown = ref(false);
 </script>
 
 <template>
+    <a name="collection-section-anchor"></a>
     <div class="collection section">
         <p class="section-name1"> Product Collections </p>
         <div class="collection__content">
@@ -48,7 +48,7 @@ let allProductsShown = ref(false);
                         :price="item.price" :key = "key"/>
                 </template>
             </div>
-            <ContentButton :props = "allProductsShown ? 'View less products' : 'View all products'" 
+            <ContentButton :button-text="allProductsShown ? 'View less products' : 'View all products'" 
                 @click="allProductsShown = !allProductsShown"/>
         </div>
     </div>
