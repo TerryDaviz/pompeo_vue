@@ -1,0 +1,79 @@
+.latest-news .latest-news__content .latest-news__content__form label p, .latest-news .latest-news__content .latest-news__content__form input[type=submit], .latest-news .latest-news__content .latest-news__content__form input[type=text] {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.latest-news .section-name1 {
+  left: auto;
+  right: 0;
+}
+.latest-news .latest-news__content {
+  margin: 0 auto 40px auto;
+  text-align: center;
+}
+.latest-news .latest-news__content .latest-news__content__image {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 40px;
+  background-color: #ebb96a;
+  background-image: url("https://assets.website-files.com/5ba96977bf120e1b45986c06/5baf7b8b7a16ad6c3bda1f4d_icons8-paper-plane-64.png");
+  background-position: 50% 50%;
+  background-size: 80px;
+  background-repeat: no-repeat;
+}
+.latest-news .latest-news__content .section-heading .section-name2 {
+  font-weight: 400;
+}
+.latest-news .latest-news__content .section-heading .section-name3 {
+  margin: 8px 0 70px 0;
+  font-weight: 400;
+}
+.latest-news .latest-news__content .section-heading .section-name3 span {
+  font-family: "Playfair Display", sans-serif;
+  color: #AC1313;
+  font-size: 68px;
+  line-height: 68px;
+}
+.latest-news .latest-news__content .latest-news__content__form {
+  display: inline-block;
+}
+.latest-news .latest-news__content .latest-news__content__form input[type=text] {
+  display: inline-block;
+  margin-right: 4px;
+  border: 1px solid #EBEBEB;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 12px 40px;
+  width: 320px;
+  height: 45px;
+  color: #A1A1A1;
+}
+.latest-news .latest-news__content .latest-news__content__form input[type=submit] {
+  border: 0;
+  width: 175px;
+  height: 45px;
+  padding: 12px 35px;
+  background-color: #000;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  color: #fff;
+}
+.latest-news .latest-news__content .latest-news__content__form input[type=submit]:hover {
+  background-color: #AC1313;
+}
+.latest-news .latest-news__content .latest-news__content__form label {
+  display: block;
+  margin-top: 40px;
+}
+.latest-news .latest-news__content .latest-news__content__form label input[type=checkbox] {
+  margin-right: 10px;
+  background-color: #8534FF;
+}
+.latest-news .latest-news__content .latest-news__content__form label p {
+  display: inline-block;
+  color: #A1A1A1;
+}

@@ -1,0 +1,56 @@
+.categories {
+  margin: 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 400px;
+}
+.categories .categories__textContent_wrapper .categories__textContent_bold {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+  text-align: left;
+}
+.categories .categories__textContent_wrapper .categories__textContent {
+  display: inline-block;
+  width: 350px;
+  font-family: "Libre Franklin", sans-serif;
+  color: #6c6c6c;
+  font-size: 14px;
+  line-height: 24px;
+}
+.categories .categories__textContent_wrapper .categories__viewDetails {
+  margin-top: 20px;
+  display: block;
+  color: #000;
+  font-size: 16px;
+}
+.categories .categories__image_wrapper {
+  width: 500px;
+  height: 220px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f5f5;
+}
+.categories .categories__image_wrapper .categories__image {
+  max-width: 50%;
+  display: inline-block;
+}
+.categories .categories__image_wrapper .categories__image2 {
+  max-width: 70%;
+  display: inline-block;
+}

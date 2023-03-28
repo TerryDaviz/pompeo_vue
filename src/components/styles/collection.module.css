@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+.collection {
+  background-color: #fff;
+}
+.collection .collection__content {
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 1200px;
+  text-align: center;
+}
+.collection .collection__content .section-name3 {
+  margin-top: 17px;
+}
+.collection .collection__content .collection__content__items {
+  margin-top: 63px;
+  display: -ms-grid;
+  display: grid;
+  width: 1172px;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.collection .collection__content .collection__content__items > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.collection .collection__content .collection__content__items > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.collection .collection__content .collection__content__items > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.collection .collection__content .collection__content__items .collection__content__items__item {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  border-bottom: 1px #DBDBDB solid;
+  text-align: left;
+}
+.collection .collection__content .collection__content__items .collection__content__items__item:hover {
+  border-bottom-color: #AC1313;
+}
+.collection .collection__content .collection__content__items .collection__content__items__item:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
+}
+.collection .collection__content .collection__content__items .collection__content__items__item .collection__content__items__item_img-block {
+  display: inline-block;
+  width: 371px;
+  height: 494px;
+  overflow: hidden;
+}
+.collection .collection__content .collection__content__items .collection__content__items__item .collection__content__items__item_img-block img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.collection .collection__content .collection__content__items .collection__content__items__item figcaption {
+  margin-top: 5px;
+  padding: 15px 0;
+}
+.collection .collection__content .collection__content__items .collection__content__items__item .collection__content__items__item_name {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6C6C6C;
+}
+.collection .collection__content .collection__content__items .collection__content__items__item .collection__content__items__item_price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+}
+.collection .collection__content .content__button {
+  margin-top: 60px;
+}

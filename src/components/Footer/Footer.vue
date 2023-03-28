@@ -26,7 +26,7 @@ const rawItems: Ref<FooterRawItem[]> = ref([
                 <br/>glass or pottery, that has been my creed.
             </p>
             <div class="footer__content__row">
-                <RawItem v-for="(item) in rawItems"
+                <RawItem v-for="(item, key) in rawItems" :key="key"
                     :img-src="item.imgSrc"
                     :title="item.title"
                     :info="item.info"/>

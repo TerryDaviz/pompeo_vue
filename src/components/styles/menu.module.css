@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+.header_wrapper .header__logo {
+  font-family: "Pacifico";
+  font-size: 33px;
+  margin: 0 0 25px 100px;
+  position: absolute;
+  left: 5;
+  top: 0;
+}
+.header_wrapper .header__menu {
+  margin: 25px 135px 25px 25px;
+  margin-right: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.header_wrapper .header__menu ul li {
+  font-family: Poppins;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #6C6C6C;
+  display: inline;
+  margin: 15px 20px;
+}
+.header_wrapper .header__menu #header__shopping-cart {
+  font-family: Poppins;
+  text-transform: capitalize;
+}
