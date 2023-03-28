@@ -16,7 +16,7 @@ const newCollectionButtonText = ref("new collection")
                 <p class="section-name3"> Ready to start shopping? </p>
             </div>
             <p class="new-collection__content__text">Lorem ipsum dolor sit amet, <span>consectetur adipiscing elit</span>. Suspendisse varius enim in eros elementum.</p>
-                <ContentButton :props = "newCollectionButtonText"/>
+                <ContentButton :button-text = "newCollectionButtonText"/>
         </div>
     </div>
 </template>
