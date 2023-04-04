@@ -6,7 +6,6 @@ import '../styles/collection.scss'
 import '../styles/section-names.scss'
 import '../styles/content__button.scss'
 import '../styles/section.scss'
-const collectionButtonText = ref("view all products")
 type Item = {
     imgSrc: string,
     itemName: string,
@@ -25,10 +24,12 @@ const itemsInfo: Ref<Item[]> = ref([
         itemName: 'Dark Bowl', price: 115},
     <Item>{ imgSrc:'https://assets.website-files.com/5bb39a4bdeee4e1e1f49f800/5bbbd819e364e903ba8fee0c_5bb3c9f370f1175d66fc5d5a_oriento-663881-unsplash.png',
         itemName: 'Square Pottery', price: 75},
-])
+]);
+let allProductsShown = ref(false);
 </script>
 
 <template>
+    <a name="collection-section-anchor"></a>
     <div class="collection section">
         <p class="section-name1"> Product Collections </p>
         <div class="collection__content">
@@ -37,12 +38,15 @@ const itemsInfo: Ref<Item[]> = ref([
                 <p class="section-name3"> Pottery collection </p>
             </div>
             <div class="collection__content__items">
-                <PotteryCollectionItem v-for="(item) in itemsInfo"
-                    :img-src="item.imgSrc"
-                    :item-name="item.itemName"
-                    :price="item.price"/>
+                <template v-for="(item, key) in itemsInfo">
+                    <PotteryCollectionItem v-if="key < 3 || allProductsShown"
+                        :img-src="item.imgSrc"
+                        :item-name="item.itemName"
+                        :price="item.price" :key = "key"/>
+                </template>
             </div>
-            <ContentButton :props = "collectionButtonText"/>
+            <ContentButton :button-text="allProductsShown ? 'View less products' : 'View all products'" 
+                @click="allProductsShown = !allProductsShown"/>
         </div>
     </div>
 </template>

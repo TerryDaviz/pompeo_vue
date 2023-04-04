@@ -20,6 +20,7 @@
             font-weight: 400;
             letter-spacing: 2px;
             text-transform:uppercase;
+            animation: appearA 1.2s forwards;
         }
         .introduction__textContent_bold{
             font-family: Poppins, sans-serif;
@@ -36,6 +37,7 @@
                 line-height: 68px;
                 font-weight: 400;
             }
+            animation: appearA 1.2s forwards;
         }
     }
     .introduction__pot_image{
@@ -51,6 +53,30 @@
     }
     .content__button{
         margin: 500px 0 0 100px;
+        animation: appearB 1.2s forwards
     }
 }
-
+@keyframes appearA {
+    0% 
+    {
+        transform:translateX(-42px);
+        opacity: 0;
+    }
+  100% 
+  {
+    transform:translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes appearB {
+    0% 
+    {
+        transform:translateY(42px);
+        opacity: 0;
+    }
+  100% 
+  {
+    transform:translateY(0);
+    opacity: 1;
+  }
+}

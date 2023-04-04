@@ -31,6 +31,8 @@
     text-transform: uppercase;
 
     color: #D77474;
+
+    animation: appearanceA 1.2s forwards;
 }
 
 .section-name3{
@@ -49,4 +51,17 @@
         font-size: 68px;
         line-height: 68px;
     }
+    animation: appearanceA 1.2s forwards;
+}
+@keyframes appearanceA {
+    0% 
+    {
+        transform:translateY(-42px);
+        opacity: 0;
+    }
+  100% 
+  {
+    transform:translateY(0);
+    opacity: 1;
+  }
 }

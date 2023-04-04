@@ -20,7 +20,7 @@ const introductionButtonText = ref("shop collection")
         </TextContent>
         <div class=" introduction__pot_image"></div>
         <div class="content__button_wrapper">
-            <ContentButton :props = "introductionButtonText"/>
+            <ContentButton :button-text="introductionButtonText" :href="'#collection-section-anchor'"/>
         </div>
     </div>
 </template>
