@@ -3,6 +3,7 @@ import {ref} from 'vue'
 import ContentButton from './ContentButton.vue'
 import introduction from '../styles/introduction.module.css'
 import '../styles/content__button.scss'
+import contentButton from '../styles/content__button.module.css'
 import TextContent from './TextContent.vue'
 const introductionButtonText = ref("shop collection")
 </script>
@@ -19,7 +20,7 @@ const introductionButtonText = ref("shop collection")
         </div>
         </TextContent>
         <div :class=" introduction.introduction__pot_image"></div>
-        <div :class="introduction.content__button_wrapper">
+        <div :class="contentButton.content__button_wrapper">
             <ContentButton :button-text="introductionButtonText" :href="'#collection-section-anchor'"/>
         </div>
     </div>

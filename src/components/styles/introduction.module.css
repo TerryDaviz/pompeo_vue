@@ -1,59 +1,65 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pacifico:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 .introduction {
-  background-image: url(https://assets.website-files.com/5ba96977bf120e1b45986c06/5bc26c68ca643a35ff2e403f_scott-webb-268893-unsplash.jpg);
-  background-size: 100% 700px;
-  background-repeat: no-repeat;
-  width: auto;
-  height: 700px;
-  padding-top: 180px;
+    background-image: url(https://assets.website-files.com/5ba96977bf120e1b45986c06/5bc26c68ca643a35ff2e403f_scott-webb-268893-unsplash.jpg);
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 500px;
+    padding-top: 180px;
 }
 .introduction .introduction__textContent_wrapper {
-  padding-top: 25px;
-  margin-left: 100px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+    padding-top: 25px;
+    margin-left: 100px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .introduction .introduction__textContent_wrapper .introduction__pompeoPottery {
-  font-family: Poppins, sans-serif;
-  color: #D77474;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-  font-weight: 400;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    color: #d77474;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
-.introduction .introduction__textContent_wrapper .introduction__textContent_bold {
-  font-family: Poppins, sans-serif;
-  margin-top: 20px;
-  font-size: 48px;
-  line-height: 58px;
-  font-weight: 500;
+.introduction
+    .introduction__textContent_wrapper
+    .introduction__textContent_bold {
+    font-family: Poppins, sans-serif;
+    margin-top: 20px;
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 500;
 }
-.introduction .introduction__textContent_wrapper .introduction__textContent_bold .introduction__logoText {
-  display: inline-block;
-  font-family: "Playfair Display", sans-serif;
-  position: relative;
-  color: #ac1313;
-  font-size: 68px;
-  line-height: 68px;
-  font-weight: 400;
+.introduction
+    .introduction__textContent_wrapper
+    .introduction__textContent_bold
+    .introduction__logoText {
+    display: inline-block;
+    font-family: 'Playfair Display', sans-serif;
+    position: relative;
+    color: #ac1313;
+    font-size: 68px;
+    line-height: 68px;
+    font-weight: 400;
 }
 .introduction .introduction__pot_image {
-  background-image: url("https://assets.website-files.com/5ba96977bf120e1b45986c06/5e602d43ad635f0fe2d06a05_Untitled-2d2%20(2).png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 784px;
-  height: 600px;
-  position: absolute;
-  right: 5%;
-  top: 45%;
-  margin-top: -130px;
+    background-image: url('https://assets.website-files.com/5ba96977bf120e1b45986c06/5e602d43ad635f0fe2d06a05_Untitled-2d2%20(2).png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 784px;
+    height: 600px;
+    position: absolute;
+    right: 5%;
+    top: 45%;
+    margin-top: -130px;
 }
 .introduction .content__button {
-  margin: 500px 0 0 100px;
+    margin: 500px 0 0 100px;
 }
+
