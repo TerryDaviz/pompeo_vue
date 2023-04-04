@@ -1,0 +1,65 @@
+@import 'fonts.scss';
+.subscribeModal_wrapper{
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    display: flex;
+    position:fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:0;
+}
+
+    .subscribeModal__window{
+        margin: 0 auto;
+        width:650px;
+        height: 300px;
+        background-color: #fff;    
+        border-radius:10px;
+    }
+
+    .subscribeModal__overlay{
+        background-color: rgba(0,0,0,0.7);
+        width: 100vw;
+        height: 100vh;
+        padding-top:50px;
+    }
+
+.subscribeModal__text{
+            font-size:20px;
+            margin: 80px 0;
+            font-family: 'Poppins'
+        }
+        .subscribeModal__button{
+            width: 100px;
+            height: 30px;
+            background-color: #ac1313;
+            color:#fff;
+            border-radius:5px;
+            border:none;
+            font-family: 'Poppins';
+        }
+
+
+        .subscribeModal__cancelButton{
+            width: 30px;
+            height: 30px;
+            display: flex;
+            border-radius:50px;
+            background-color: #fff;
+            border:none;
+            // align-items:start;
+            // justify-self:end;
+            right:0;
+            top:0;
+            position:relative;
+
+        }
+
+        .subsribeModal__button_wrapper{
+            display: flex;
+            flex-flow: row-reverse wrap;
+            
+        }
+
