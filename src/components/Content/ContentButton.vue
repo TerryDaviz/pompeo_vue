@@ -8,6 +8,6 @@ const props = defineProps({
 </script>
 
 <template>
-    <a :href="href" @click="showMessage(buttonText)" class="content__button"> {{buttonText.toUpperCase()}} </a> 
+    <a :href="href"  class="content__button"> {{buttonText.toUpperCase()}} </a> 
 </template>
 
