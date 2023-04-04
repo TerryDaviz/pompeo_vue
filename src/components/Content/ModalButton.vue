@@ -2,11 +2,9 @@
  defineProps({
         isPressed:Boolean,
         }) 
-const hanleClick = () => {
-    console.log(isPressed);
-}
+const hanleClick = ()
 </script>
 
 <template>
-    <button class="subscribeModal__button" @click="isPressed = !isPressed">OK</button>
+    <button class="subscribeModal__button" @click.prevent="isPressed = !isPressed">OK</button>
 </template>

@@ -4,9 +4,7 @@ const props = defineProps({
     buttonText: String,
     href: String,
 })
-function showMessage(innerText){
-    console.log(innerText);        
-}
+
 </script>
 
 <template>
