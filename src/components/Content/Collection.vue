@@ -2,10 +2,10 @@
 import {Ref, ref} from 'vue'
 import ContentButton from './ContentButton.vue'
 import PotteryCollectionItem from './PotteryCollectionItem.vue'
-import '../styles/collection.scss'
-import '../styles/section-names.scss'
-import '../styles/content__button.scss'
-import '../styles/section.scss'
+import collection from '../styles/collection.module.css'
+import sectionNames from '../styles/section-names.module.css'
+import section from '../styles/section.module.css'
+import contentButton from '../styles/content__button.module.css'
 
 type Item = {
     imgSrc: string,
@@ -33,14 +33,14 @@ let allProductsShown = ref(false);
 
 <template>
     <a name="collection-section-anchor"></a>
-    <div class="collection section">
-        <p class="section-name1"> Product Collections </p>
-        <div class="collection__content">
-            <div class="section-heading">
-                <p class="section-name2"> Our online store </p>
-                <p class="section-name3"> Pottery collection </p>
+    <div :class="[collection.collection, section.section]">
+        <p :class="[sectionNames['section-name1'],collection['section-name1']]"> Product Collections </p>
+        <div :class="collection.collection__content">
+            <div>
+                <p :class="[sectionNames['section-name2'],collection['section-name2']]"> Our online store </p>
+                <p :class="[sectionNames['section-name3'],collection['section-name3']]"> Pottery collection </p>
             </div>
-            <div class="collection__content__items">
+            <div :class="collection.collection__content__items">
                 <template v-for="(item, key) in itemsInfo">
                     <PotteryCollectionItem v-if="key < 3 || allProductsShown"
                         :img-src="item.imgSrc"
@@ -49,7 +49,8 @@ let allProductsShown = ref(false);
                 </template>
             </div>
             <ContentButton :button-text="allProductsShown ? 'View less products' : 'View all products'" 
-                @click="allProductsShown = !allProductsShown"/>
+                @click="allProductsShown = !allProductsShown"
+                :class="collection.content__button"/>
         </div>
     </div>
 </template>

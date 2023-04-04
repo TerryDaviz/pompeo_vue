@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import {Ref, ref} from "vue"
 import RawItem from "./RowItem.vue"
-import '../styles/footer.scss'
-import '../styles/section.scss'
+import footerStyle from '../styles/footer.module.css'
+import section from '../styles/section.module.css'
 type FooterRawItem = {
     imgSrc: string,
     title: string,
@@ -19,20 +19,20 @@ const rawItems: Ref<FooterRawItem[]> = ref([
 </script>
 
 <template id="footer">
-    <footer class="section">
-        <div class="footer__content">
-            <a class="footer__content__name" href="#"> Pompeo </a>
-            <p class="footer__content__about"> I have always striven to fix beauty in wood, stone,
+    <footer :class="[section.section, footerStyle.section]">
+        <div :class="footerStyle.footer__content">
+            <a :class="footerStyle.footer__content__name" href="#"> Pompeo </a>
+            <p :class="footerStyle.footer__content__about"> I have always striven to fix beauty in wood, stone,
                 <br/>glass or pottery, that has been my creed.
             </p>
-            <div class="footer__content__row">
+            <div :class="footerStyle.footer__content__row">
                 <RawItem v-for="(item, key) in rawItems" :key="key"
                     :img-src="item.imgSrc"
                     :title="item.title"
                     :info="item.info"/>
             </div>
         </div>
-        <div class="footer__subfooter">
+        <div :class="footerStyle.footer__subfooter">
             <p>Template design by <a href="#">Dorian Hoxha</a> - <a href="#">Image License Info</a> Powered by <a href="#">Webflow</a></p>
         </div>
     </footer>
