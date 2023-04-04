@@ -40,10 +40,11 @@ const itemsInfo:Ref<Catalog[]>=ref(
             <div :class="vmp.category">
                 <div :class="vmp.VMP">
                     <CategoryItem
-                    v-for="(cat) in itemsInfo"
+                    v-for="(cat, key) in itemsInfo"
                     :img-src="cat.imgSrc"
                     :item-name="cat.itemName"
-                    :style="{backgroundColor:cat.color}"/>
+                    :style="{backgroundColor:cat.color}"
+                    :key="key"/>
                 </div>
                 <div :class="vmp.blockA">
                     <TextContent>

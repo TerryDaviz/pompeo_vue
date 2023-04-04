@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import {ref} from 'vue'
-import '../styles/latest-news.scss'
-import '../styles/section-names.scss'
-import '../styles/section.scss'
+import latestNews from '../styles/latest-news.module.css'
+import sectionNames from '../styles/section-names.module.css'
+import section from '../styles/section.module.css'
 import SubscribeModal from './SubscribeModal.vue'
 
 const isSubmitted = ref(false)
@@ -14,15 +14,15 @@ const handleSubmit = () => {
 </script>
 
 <template>
-    <div class="latest-news section">
-        <div class="latest-news__content">
-            <div class="latest-news__content__image"></div>
-            <div class="section-heading">
-                <p class="section-name2"> Latest news </p>
-                <p class="section-name3"> Latest News <span>&</span> New Updates </p>
+    <div :class="[latestNews['latest-news'], section.section]">
+        <div :class="latestNews['latest-news__content']">
+            <div :class="latestNews['latest-news__content__image']"></div>
+            <div>
+                <p :class="[sectionNames['section-name2'],latestNews['section-name2']]"> Latest news </p>
+                <p :class="[sectionNames['section-name3'],latestNews['section-name3']]"> Latest News <span>&</span> New Updates </p>
             </div>
 
-            <form class="latest-news__content__form">
+            <form :class="latestNews['latest-news__content__form']">
                 <input type="text" maxlength="256" placeholder="Enter your email" required/>
                 <input type="submit" value="SUBSCRIBE" @click.prevent="handleSubmit"/>
                 <SubscribeModal v-if="isSubmitted" v-model="isSubmitted" @click-event="handleSubmit"/>
@@ -32,6 +32,6 @@ const handleSubmit = () => {
                 </label>
             </form>
         </div>
-        <p class="section-name1"> Let's get in touch </p>
+        <p :class="[sectionNames['section-name1'],latestNews['section-name1']]"> Let's get in touch </p>
     </div>
 </template>
